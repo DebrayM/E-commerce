@@ -48,42 +48,45 @@
                             .nb_cadre{
                                 margin-top: 15px;
                                 width: 300px;
-                                height: 100px;
+                                height: 200px;
                                 border-width: 2px;
                                 border-color: $bord-color-jaune;
                                 border-style: solid;
                                 border-radius: 57px;
                                 background-color: $bg-color-gris;  
                                 text-align: center; 
-                                display: flex;
-                                flex-direction: row;
-                                align-items: center;
-                                gap: 30px;
-                                img{
-                                    padding-left: 30px;
-                                    width: 80px;
-                                }
-                                .nb_text{
+
+                                .nb_cadre_produit{
+                                    padding-bottom: 3vh;
                                     display: flex;
-                                    flex-direction: column;
-                                    justify-content: center;
-                                    text-align: left;
-    
-                                    .nblibel{
-                                        font-size: 18px;
-                                        font-weight: bold;
-                                        color: $color-text-gris;
-                                        line-height: 1.2;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    gap: 30px;
+                                    img{
+                                        padding-left: 30px;
+                                        width: 80px;
                                     }
-                                    .nbprix{
-                                        padding-top: 6px;
-                                        font-size: 18px;
-                                        font-weight: bold;
-                                        color: $color-text-jaune;
-                                        line-height: 1.2;
+                                    .nb_text{
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        text-align: left;
+        
+                                        .nblibel{
+                                            font-size: 18px;
+                                            font-weight: bold;
+                                            color: $color-text-gris;
+                                            line-height: 1.2;
+                                        }
+                                        .nbprix{
+                                            padding-top: 6px;
+                                            font-size: 18px;
+                                            font-weight: bold;
+                                            color: $color-text-jaune;
+                                            line-height: 1.2;
+                                        }
                                     }
                                 }
-    
                             }
                         }
     
@@ -187,14 +190,7 @@
                                         }
                                     }
                                 }
-                                .bouton {
-                                    border-radius: 10px;
-                                    border: none;
-                                    background-color: rgb(6, 6, 6);
-                                    color: white;
-                                    font-weight: bold;
-                                    padding: 4px 8px;
-                                }
+
                             }
                         }
     

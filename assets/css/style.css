@@ -376,12 +376,15 @@ body main hr {
 }
 body main section {
   width: 90%;
+  margin: auto;
+  margin-bottom: 5vh;
 }
 body main section .services {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 15px;
 }
 body main section .services .service {
   color: #838383;
@@ -389,15 +392,16 @@ body main section .services .service {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 15px;
 }
-body main section .services .service svg {
+body main section .services .service div svg {
   width: 34px;
   height: 34px;
 }
-body main section .services .service h5 {
+body main section .services .service .serviceText h5 {
   color: #ffd700;
 }
-body main section .services .service p {
+body main section .services .service .serviceText p {
   font-size: 14px;
   color: #838383;
 }
@@ -409,26 +413,25 @@ body main .bgGris {
 body main .bgGris p {
   color: #ffd700;
   font-weight: bold;
-  padding-top: 2vh;
-  padding-bottom: 5vh;
-  text-align: center;
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+}
+body main .bgGris .titre {
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+}
+body main .bgGris .titre h1 {
+  color: #ffd700;
+}
+body main .bgGris .titre p {
+  color: #838383;
+  font-weight: bold;
 }
 body main .bgGris .infos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-body main .bgGris .infos .titre {
-  padding-top: 5vh;
-  padding-bottom: 2vh;
-}
-body main .bgGris .infos .titre h1 {
-  color: #ffd700;
-}
-body main .bgGris .infos .titre p {
-  color: #838383;
-  font-weight: bold;
 }
 body main .bgGris .infos ul {
   list-style: none;
@@ -671,35 +674,38 @@ body footer ul li {
   body main section .pub .new_best .newbest .nb_cadre {
     margin-top: 15px;
     width: 300px;
-    height: 100px;
+    height: 200px;
     border-width: 2px;
     border-color: #ffef99;
     border-style: solid;
     border-radius: 57px;
     background-color: #f5f1f1;
     text-align: center;
+  }
+  body main section .pub .new_best .newbest .nb_cadre .nb_cadre_produit {
+    padding-bottom: 3vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 30px;
   }
-  body main section .pub .new_best .newbest .nb_cadre img {
+  body main section .pub .new_best .newbest .nb_cadre .nb_cadre_produit img {
     padding-left: 30px;
     width: 80px;
   }
-  body main section .pub .new_best .newbest .nb_cadre .nb_text {
+  body main section .pub .new_best .newbest .nb_cadre .nb_cadre_produit .nb_text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
   }
-  body main section .pub .new_best .newbest .nb_cadre .nb_text .nblibel {
+  body main section .pub .new_best .newbest .nb_cadre .nb_cadre_produit .nb_text .nblibel {
     font-size: 18px;
     font-weight: bold;
     color: #838383;
     line-height: 1.2;
   }
-  body main section .pub .new_best .newbest .nb_cadre .nb_text .nbprix {
+  body main section .pub .new_best .newbest .nb_cadre .nb_cadre_produit .nb_text .nbprix {
     padding-top: 6px;
     font-size: 18px;
     font-weight: bold;
@@ -794,12 +800,91 @@ body footer ul li {
     color: #ffd700;
     line-height: 1.2;
   }
-  body main section .pub .new_best .newbest .nb_cadre .bouton {
-    border-radius: 10px;
-    border: none;
-    background-color: #060606;
-    color: white;
+}
+@media screen and (min-width: 1200px) {
+  body main section .services {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  body main section .services {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 55px;
+  }
+  body main section .services .service {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body main .bgGris p {
+    text-align: left;
+  }
+  body main .bgGris .titre {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    text-align: left;
+  }
+  body main .bgGris .infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  body main .bgGris {
+    width: 100%;
+    background-color: #f5f1f1;
+  }
+  body main .bgGris p {
+    color: #ffd700;
     font-weight: bold;
-    padding: 4px 8px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    text-align: left;
+  }
+  body main .bgGris .titre {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    text-align: left;
+  }
+  body main .bgGris .infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
   }
 }/*# sourceMappingURL=style.css.map */

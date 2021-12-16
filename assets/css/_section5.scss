@@ -7,30 +7,38 @@ body{
         }
         section{
             width: 90%;
+            margin: auto;
+            margin-bottom: 5vh;
 
             .services{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center; 
-                
+                gap: 15px;
                 .service{
                     color: $color-text-gris; 
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
-                    svg{
-                        width: 34px;
-                        height: 34px;
+                    gap: 15px;
+                    div {
+                        svg{
+                            width: 34px;
+                            height: 34px;
+                        }
                     }
-                    h5{
-                        color: $color-text-jaune; 
+                    .serviceText{
+                        h5{
+                            color: $color-text-jaune; 
+                        }
+                        p{
+                            font-size: 14px;
+                            color: $color-text-gris;
+                        }
                     }
-                    p{
-                        font-size: 14px;
-                       color: $color-text-gris; 
-                    }
+
                 }
 
             }

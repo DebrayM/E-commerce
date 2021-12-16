@@ -1,0 +1,29 @@
+@media screen and (min-width: 1200px) {
+    footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 50px;
+        }
+    }
+}

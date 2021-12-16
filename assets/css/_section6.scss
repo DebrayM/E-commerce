@@ -6,27 +6,25 @@ body{
                 p{
                     color: $color-text-jaune;
                     font-weight: bold;
-                    padding-top: 2vh;
-                    padding-bottom: 5vh;
-                    text-align: center;
+                    padding-top: 5vh;
+                    padding-bottom: 2vh;
+                }
+                .titre{
+                    padding-top: 5vh;
+                    padding-bottom: 2vh;
+                    h1{
+                        color: $color-text-jaune;
                     }
+                    p{
+                        color: $color-text-gris;
+                        font-weight: bold;
+                    }
+                }
                 .infos{
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center; 
-
-                    .titre{
-                        padding-top: 5vh;
-                        padding-bottom: 2vh;
-                        h1{
-                            color: $color-text-jaune;
-                        }
-                        p{
-                            color: $color-text-gris;
-                            font-weight: bold;
-                        }
-                    }
 
                     ul{
                         list-style: none;
@@ -40,7 +38,7 @@ body{
                         }
 
                         li{
-                                color: $color-text-gris;
+                            color: $color-text-gris;
                         }
                     }
 
