@@ -1,0 +1,23 @@
+body{
+    footer{
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        margin-left: 5vh;
+        display: flex;
+        flex-direction: column;
+        gap:2vh;
+
+        p{
+            color: $color-text-gris;
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            li{
+                    color: $color-text-gris;
+            }
+        }
+    }
+}

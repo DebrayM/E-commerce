@@ -1,0 +1,97 @@
+body{
+    main{
+        section{
+            h2{
+                font-size: 20px;
+                color: $color-text-gris;
+                text-align: center;
+                padding-top: 10vh;
+            }
+            .top{
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .top_flex{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .top_box{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 10px;
+                        .cadre{
+                            margin-top: 5vh;
+                            width: 200px;
+                            height: 160px;
+                            border-width: 2px;
+                            border-color: $bord-color-jaune;
+                            border-style: solid;
+                            border-radius: 57px;
+                            background-color: $bg-color-gris;  
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center; 
+                            padding-bottom: 3vh;
+                            padding-top: 10px;
+                            gap: 10px;
+                            img{
+                                width: 100px;
+                                height: 100px;
+                                object-fit: contain;
+                            }
+                            .bouton {
+                                border-radius: 10px;
+                                border: none;
+                                color: $color-text-jaune;
+                                font-size: 16px;
+                                font-weight: normal;
+                                padding: 8px 16px;
+                                margin-top: 20px;
+                                margin-bottom: 15px;
+                                background-color: rgba(230,230, 230, 1);
+                                background-image: linear-gradient(to top left,
+                                                                rgba(0, 0, 0, .2),
+                                                                rgba(0, 0, 0, .2) 30%,
+                                                                rgba(0, 0, 0, 0));
+                                box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                                            inset -2px -2px 3px rgba(0, 0, 0, .6);
+    
+                                &:hover {
+                                    background-color: rgba(192,192, 192, 1);
+                                    color: $bord-color-jaune;
+                                }
+    
+                                &:active {
+                                    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                                                inset 2px 2px 3px rgba(0, 0, 0, .6);
+                                }
+                            }
+                        }
+                        .top_box_text{
+                            margin-top: 5px;
+                            .TxtG{
+                                margin-top: 5px;
+                                color: $color-text-gris;
+                            }
+                            .TxtJ{
+                                margin-top: 5px;
+                                color: $color-text-jaune;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+
+        }
+    }
+}

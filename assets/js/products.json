@@ -1,0 +1,86 @@
+[
+    {"id": "P001",
+    "title": "Pierres inscrustées",
+    "price": "1200"
+    },
+    {"id": "P002",
+    "title": "Diamants Rose et Vert",
+    "price": "1200"
+    },
+    {"id": "P003",
+    "title": "Parrure Diamants",
+    "price": "2500"
+    },
+    {"id": "T001",
+    "title": "Alliance Argent",
+    "price": "900"
+    },
+    {"id": "T002",
+        "title": "Diamant Rose",
+        "price": "1900"
+    },
+    {"id": "T003",
+        "title": "Rubis",
+        "price": "2200"
+    },
+    {"id": "T004",
+        "title": "Diamant Bleu",
+        "price": "2000"
+    },
+    {"id": "T005",
+        "title": "Diamant",
+        "price": "1000"
+    },
+    {"id": "T006",
+        "title": "Améthyste",
+        "price": "2000"
+    },
+    {"id": "T007",
+        "title": "Diamant Vert",
+        "price": "2900"
+    },
+    {"id": "T008",
+        "title": "Nid d'abeilles",
+        "price": "1900"
+    },
+    {"id": "V001",
+        "title": "Grenat",
+        "price": "1350"
+    },
+    {"id": "V002",
+        "title": "OR Rose",
+        "price": "1500"
+    },
+    {"id": "V003",
+        "title": "Argent & Diamants",
+        "price": "1950"
+    },
+    {"id": "V004",
+        "title": "Diamant Jaune",
+        "price": "2100"
+    },
+    {"id": "V005",
+        "title": "Perle Blanche",
+        "price": "2100"
+    },
+    {"id": "V006",
+        "title": "Ambre",
+        "price": "1850"
+    },
+    {"id": "V007",
+        "title": "OR & Diamant Jaune",
+        "price": "1950"
+    },
+    {"id": "V008",
+        "title": "Turquoise",
+        "price": "900"
+    },
+    {"id": "V009",
+        "title": "Diamant Rose & Blanc",
+        "price": "1100"
+    },
+    {"id": "V010",
+        "title": "Collier Améthyste",
+        "price": "2100"
+    }
+]

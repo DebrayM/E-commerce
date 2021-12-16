@@ -1,0 +1,41 @@
+body{
+    main{
+        hr{
+            color: $color-text-gris;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+        }
+        section{
+            width: 90%;
+
+            .services{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; 
+                
+                .service{
+                    color: $color-text-gris; 
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    svg{
+                        width: 34px;
+                        height: 34px;
+                    }
+                    h5{
+                        color: $color-text-jaune; 
+                    }
+                    p{
+                        font-size: 14px;
+                       color: $color-text-gris; 
+                    }
+                }
+
+            }
+
+
+        }
+    }
+}

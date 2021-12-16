@@ -1,0 +1,50 @@
+body{
+    main{
+            .bgGris{
+                width: 100%;
+                background-color: $bg-color-gris;
+                p{
+                    color: $color-text-jaune;
+                    font-weight: bold;
+                    padding-top: 2vh;
+                    padding-bottom: 5vh;
+                    text-align: center;
+                    }
+                .infos{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center; 
+
+                    .titre{
+                        padding-top: 5vh;
+                        padding-bottom: 2vh;
+                        h1{
+                            color: $color-text-jaune;
+                        }
+                        p{
+                            color: $color-text-gris;
+                            font-weight: bold;
+                        }
+                    }
+
+                    ul{
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        p{
+                        color: $color-text-jaune;
+                        font-weight: bold;
+                        }
+
+                        li{
+                                color: $color-text-gris;
+                        }
+                    }
+
+                }
+            }
+    }
+}

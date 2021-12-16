@@ -1,0 +1,66 @@
+@media screen and (min-width: 1200px) {
+
+body{
+    header{
+        img{
+            padding: 20px 20px 20px 60px;
+            height: 80px;
+        }
+        .desk{
+            padding-right: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap:35px;
+            .desk_menu{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 24px;
+                padding-right: 15vh;
+            }
+            .desk_icons{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 24px;
+            }
+            a{
+                color: white;
+            }
+            a:hover{
+                color: $color-text-jaune;
+            }
+        }
+        .burger{
+            display: none;
+        }
+    }
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    body{
+        header{
+            img{
+                padding: 20px 20px 20px 30px;
+                height: 60px;
+            }
+            .desk{
+                display: none;
+                .desk_menu{
+                    display: none;
+                }
+                .desk_icons{
+                    display: none;
+                }
+            }
+            .burger{
+                padding: 20px 30px 20px 20px;
+                display: block;
+            }
+        }
+    }
+}

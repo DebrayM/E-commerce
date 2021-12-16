@@ -1,0 +1,29 @@
+@media screen and (min-width: 1200px) {
+body{
+     main{
+        section{
+            .promo{
+            display: grid;
+            grid-template-areas: 
+            "promo1 promo2 promo3";
+            }
+        }
+    }
+}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+body{
+    main{
+        section{
+            .promo{
+                display: grid;
+                grid-template-areas: 
+                "promo1 promo2"
+                "promo3 vide";
+            }
+        }
+    }
+}
+}

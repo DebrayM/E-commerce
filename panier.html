@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argentina - Panier</title>
+    <link rel="stylesheet" href="assets/css/stylepanier.css">
+    <script src="assets/js/panier.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <img src="./assets/images/icons/logoArgentina.svg" alt="Logo ARENTINA - Magazin en ligne de vente de bijoux">
+        <div class="desk">
+            <ul class="desk_menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Boutique</a></li>
+                <li><a href="#">Compte</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="desk_icons">
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg></a>
+                </li>
+                <li><a href="panier.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-basket3" viewBox="0 0 16 16">
+                        <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM3.394 15l-1.48-6h-.97l1.525 6.426a.75.75 0 0 0 .729.574h9.606a.75.75 0 0 0 .73-.574L15.056 9h-.972l-1.479 6h-9.21z"/>
+                      </svg></a>
+                </li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"w fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                      </svg></a>
+                </li>
+            </ul>
+        </div>
+        <a href="#" class="burger"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg></a>
+    </header>
+    <main>
+        <section id="panier">
+            <table id="tbPanier">      
+                <caption>Votre panier</caption>
+
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="tbActions">
+                        <form>
+                            <label for="quantite">Qté: <input type="number" name="quantite" id="quantite" min="1" max="10" value="1"></label>
+                        </form>
+                        <a href="#">supprimer</a>
+                    </td>
+                    <td></td>
+                </tr>
+
+            </table>
+        </section>
+        <section id="formulaire">
+            <form>
+                <fieldset>
+                    <legend>Veuillez renseigner vos informations de livraison</legend>
+                    <input type="text" name="nom" id="nom" placeholder="Nom">
+                    <input type="text" name="prenom" id="prenom" placeholder="Prénom">
+                    <input type="text" name="adresse" id="adresse" placeholder="34 rue du Rambuteau">
+                    <input type="text" name="cp" id="cp" placeholder="75001" minlength="5" maxlength="5" size="5">
+                    <input type="text" name="ville" id="ville" placeholder="Paris">
+                </fieldset>
+                <button type="submit" class="bouton">S'inscrire</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Corpyright 2021</p>
+        <ul>
+            <li>Politique de confidentialité</li>
+            <li>Conditions Générales de vente</li>
+        </ul>
+    </footer>
+</body>
+</html>

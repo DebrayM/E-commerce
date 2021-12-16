@@ -1,0 +1,93 @@
+body{
+    main{
+        section{
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .pCadre{
+                width: 90%;
+                border-width: 2px;
+                border-color: $bord-color-jaune;
+                border-style: solid;
+                border-radius: 57px;
+                background-color: $bg-color-gris;  
+                text-align: center; 
+                padding-top: 40px; 
+                padding-bottom: 40px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2vh;
+                .pCadreProduit{
+                    .pImg{
+                        img{
+                            width: 100px;
+                            height: 100px;
+                            object-fit: contain;
+                        }
+                    }
+                    .pText{
+                        h5{
+                            color:$color-text-gris;
+                        }
+                        p{
+                            color:$color-text-jaune;
+                        }
+                    }
+                }
+
+                .pCadreForm{
+                    form{
+                        fieldset{
+                            border: none;
+                            margin-bottom: 20px;
+                            label{
+                                color:$color-text-jaune; 
+                                font-size: 14px;
+                                margin-right: 10px;
+                            }
+                            #quantite{
+                                border: none;
+                                color:$color-text-gris;
+                                font-size: 14px;
+                                width: 50px;
+                            }
+                        }
+                        .bouton {
+                            border-radius: 10px;
+                            border: none;
+                            color: $color-text-jaune;
+                            font-size: 16px;
+                            font-weight: normal;
+                            padding: 8px 16px;
+                            margin-top: 20px;
+                            margin-bottom: 15px;
+                            background-color: rgba(230,230, 230, 1);
+                            background-image: linear-gradient(to top left,
+                                                            rgba(0, 0, 0, .2),
+                                                            rgba(0, 0, 0, .2) 30%,
+                                                            rgba(0, 0, 0, 0));
+                            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                                        inset -2px -2px 3px rgba(0, 0, 0, .6);
+
+                            &:hover {
+                                background-color: rgba(192,192, 192, 1);
+                                color: $bord-color-jaune;
+                            }
+
+                            &:active {
+                                box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                                            inset 2px 2px 3px rgba(0, 0, 0, .6);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

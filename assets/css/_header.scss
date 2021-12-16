@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+    header{
+        background-color: $bg-color-entete;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        img{
+            padding: 10px 10px 10px 20px;
+            height: 34px;
+        }
+        .desk{
+            display: none;
+            .desk_menu{
+                display: none;
+            }
+            .desk_icons{
+                display: none;
+            }
+        }
+        .burger{
+            padding: 10px 20px 10px 10px;
+            display: block;
+        }
+    }
+}

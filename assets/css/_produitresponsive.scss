@@ -1,0 +1,113 @@
+
+@media screen and (min-width: 1200px) {
+    body{
+        main{
+            section{
+                margin-top: 15vh;
+                margin-bottom: 15vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                .pCadre{
+                    width: 80%;
+                    border-width: 2px;
+                    border-color: $bord-color-jaune;
+                    border-style: solid;
+                    border-radius: 57px;
+                    background-color: $bg-color-gris;  
+                    text-align: center;  
+                    padding-top: 5vh;
+                    padding-bottom: 5vh;
+    
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15vh;
+                    .pCadreProduit{
+                        .pImg{
+                            img{
+                                width: 250px;
+                                height: 250px;
+                                object-fit: contain;
+                            }
+                        }
+
+                        .pText{
+                            h5{
+                                color:$color-text-gris;
+                            }
+                            p{
+                                color:$color-text-jaune;
+                            }
+                        }
+                    }
+    
+                    .pCadreForm{
+                        input{
+                            color:$color-text-gris;
+                            width: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+body{
+    main{
+        section{
+            margin-top: 15vh;
+            margin-bottom: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .pCadre{
+                width: 80%;
+                border-width: 2px;
+                border-color: $bord-color-jaune;
+                border-style: solid;
+                border-radius: 57px;
+                background-color: $bg-color-gris;  
+                text-align: center;  
+                padding-top: 5vh;
+                padding-bottom: 5vh;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 3vh;
+                .pCadreProduit{
+                    .pImg{
+                        img{
+                            width: 250px;
+                            height: 250px;
+                            object-fit: contain;
+                        }
+                    }
+                    .pText{
+                        h5{
+                            color:$color-text-gris;
+                        }
+                        p{
+                            color:$color-text-jaune;
+                        }
+                    }
+                }
+
+                .pCadreForm{
+                    input{
+                        color:$color-text-gris;
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+}

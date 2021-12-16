@@ -1,0 +1,98 @@
+body{
+    main{
+        section{
+
+
+.promo{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    "promo1"
+    "promo2"
+    "promo3";
+    gap: 10px;
+
+    #promo1{
+        grid-area: promo1;
+    }
+    #promo2{
+        grid-area: promo2;
+    }
+    #promo3{
+        grid-area: promo3;
+    }
+ 
+    .promo_cadre {
+        border-width: 2px;
+        border-color: $bord-color-jaune;
+        border-style: solid;
+        border-radius: 57px;
+        background-color: $bg-color-gris;  
+        text-align: center;  
+        padding-bottom: 40px;
+
+        img{
+            width: 250px;
+        }
+        .libel{
+            font-size: 24px;
+            color: $color-text-gris; 
+            text-align: center;
+        }
+        .prix{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;  
+
+            .prixJaune{
+                font-size: 24px;
+                font-weight: bold;
+                color: $color-text-jaune;
+                line-height: 1.2;
+            }
+              
+            .prixrouge{
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 1.2;
+                color: $color-text-rouge;
+                text-decoration:line-through;      
+            }
+        }
+
+        .bouton {
+            border-radius: 10px;
+            border: none;
+            color: $color-text-jaune;
+            font-size: 16px;
+            font-weight: normal;
+            padding: 8px 16px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            background-color: rgba(230,230, 230, 1);
+            background-image: linear-gradient(to top left,
+                                            rgba(0, 0, 0, .2),
+                                            rgba(0, 0, 0, .2) 30%,
+                                            rgba(0, 0, 0, 0));
+            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                        inset -2px -2px 3px rgba(0, 0, 0, .6);
+
+            &:hover {
+                background-color: rgba(192,192, 192, 1);
+                color: $bord-color-jaune;
+            }
+
+            &:active {
+                box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                            inset 2px 2px 3px rgba(0, 0, 0, .6);
+            }
+        }
+    }
+}
+}
+}
+}

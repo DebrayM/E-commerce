@@ -1,0 +1,57 @@
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+.container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    .fleche {
+        display: none;
+    }
+    .boite {
+        width: 360px;
+        height: 340px;
+        background-color: $bg-color-gris;
+        border: 2px solid $bord-color-jaune;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .image {
+            width: 300px;
+            height: 320px;
+            object-fit: cover;
+        }
+    }
+    #carousel {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.containerdot{
+    display: flex;
+    justify-content: center;
+}
+.divdot {
+    padding-top: 1vh;
+    padding-bottom: 5vh;
+    display: inline-block;
+    flex-direction: row;
+    gap: 2vh;
+    a {
+        color: $color-text-gris;
+    }
+    a:hover {
+        color: $color-text-jaune;
+    }
+}
+}
