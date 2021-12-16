@@ -44,9 +44,9 @@ function RecherchePanier() {
          let y = monPamier.length;
         for (let i=0; i<y; i++) {
             let produit = monPamier[i];
-            console.log(produit);
-            /* création de la structure d'affichage du nom et du prix du produit * */
+            //console.log(produit);
 
+            /* création de la structure d'affichage du nom et du prix du produit * */
             nodeTH = document.createElement('tr');
             nodeTH.innerHTML = `
                 <td><img src="assets/images/${produit.panier_id}.png" alt=""></td>
@@ -106,7 +106,6 @@ function supprimer(event){
 function modifierPanier(action, article, quantite){
     let montantTotal = 0;
     let nbArticle = 0;
-
     //le panier existe mais on fait le test quand même
     if(localStorage.getItem('product')!==null){
         // étape 1 : on récupère son contenu
@@ -132,12 +131,12 @@ function modifierPanier(action, article, quantite){
         let nbav = 0;
         let prix = 0;
         let flag = false;
-        //
+        
         for(let i=0; i<y; i++){
-            if(panier[i].id === article){
-                console.log()
-            flag = true;
-            z=i;
+            //console.log(panier[i].panier_id, article)
+            if(panier[i].panier_id === article){
+                flag = true;
+                z=i;
             }
         }
         if (flag === true){
@@ -150,15 +149,17 @@ function modifierPanier(action, article, quantite){
                 ap = panier[z].panier_px * quantite;
                 //on met à jour le nouveau montant et le prix
                 prix = panier[z].panier_px;
-                productJSON[0].panier[y] = {"panier_id":article, "panier_qt":quantite, "panier_px":prix};
+                productJSON[0].panier[z] = {"panier_id":article, "panier_qt":quantite, "panier_px":prix};
             }else{
                 //on supprimer la ligne dans le panier
-                productJSON[0].panier[y].remove();
+                productJSON[0].panier.splice(z, 1);
             }
         }
+
         //on met à jour le montant total et le nombre d'article
         montantTotal = montantTotal - av + ap;
-        nbArticle = nbArticle - nbav + quantite;
+        nbArticle = nbArticle - nbav + parseInt(quantite);
+        //
         //on met à jour le fichier JSON
         productJSON[0].prixTotal = montantTotal;
         productJSON[0].nbArticles = nbArticle;

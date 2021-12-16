@@ -1,7 +1,7 @@
 let productArray=[];
 
 document.querySelector('#add').addEventListener('click', ajouterAuPanier);
-document.querySelector('#reset').addEventListener('click', initPanier);
+
 
 function ajouterAuPanier(event) {
     event.preventDefault();
@@ -15,11 +15,6 @@ function ajouterAuPanier(event) {
 
 
     let productJSON;
-    //{"nbArticles": 3, "prixTotal": 4500, "panier":[
-    //    {"panier_id": pID, "panier_qt":pQT, "panier_px":pPX},
-    //    {"panier_id": pID, "panier_qt":pQT, "panier_px":pPX},
-    //    {"panier_id": pID, "panier_qt":pQT, "panier_px":pPX}
-    // ] } ;
 
      //existe-t-il déjà un panier ?
     if(localStorage.getItem('product')!==null){
@@ -41,7 +36,7 @@ function ajouterAuPanier(event) {
       let nbav = 0;
       let flag = false;
       for(let i=0; i<y; i++){
-        if(panier[i].id === pID){
+        if(panier[i].panier_id === pID){
           flag = true;
           z=i;
         }
@@ -82,17 +77,4 @@ function ajouterAuPanier(event) {
       productArray.push(productJSON);  
       localStorage.setItem('product', JSON.stringify(productArray));   
     }
-}
-
-function initPanier(){
-
-  let productJSON =
-    {"nbArticles": 3, "prixTotal": 5300, "panier":[
-    {"panier_id":"T006", "panier_qt":1, "panier_px":2000},
-    {"panier_id":"V010", "panier_qt":1, "panier_px":2100},
-    {"panier_id":"P001", "panier_qt":1, "panier_px":1200}
-  ] } ;
-
-  productArray.push(productJSON);
-  localStorage.setItem('product', JSON.stringify(productArray));
 }
