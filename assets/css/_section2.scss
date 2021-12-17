@@ -13,13 +13,13 @@ body{
     "promo3";
     gap: 10px;
 
-    #promo1{
+    .promo1{
         grid-area: promo1;
     }
-    #promo2{
+    .promo2{
         grid-area: promo2;
     }
-    #promo3{
+    .promo3{
         grid-area: promo3;
     }
  

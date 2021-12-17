@@ -1,6 +1,6 @@
 let temps;
 
-window.onload = function () {
+
     //gestion du menu burger
     //btnBurger : bouton d'affichage du menu burger
     document.getElementById('btnBurger').addEventListener('click', afficheMenu);
@@ -35,7 +35,7 @@ window.onload = function () {
     dt3.addEventListener('click', modeDot);
   
     temps = setTimeout(moveright, 300);
-  };
+
 
 function afficheMenu(){
     //mnuBurger : DIV du menu burger
