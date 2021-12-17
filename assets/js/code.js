@@ -1,6 +1,10 @@
 let temps;
 
 window.onload = function () {
+    //gestion du menu burger
+    //btnBurger : bouton d'affichage du menu burger
+    document.getElementById('btnBurger').addEventListener('click', afficheMenu);
+    //getion de l'affichage des images du carousel avec les bouton "dots"
     document.getElementById('bt1').style.display = 'flex';
     document.getElementById('bt2').style.display = 'none';
     document.getElementById('bt3').style.display = 'none';
@@ -32,9 +36,13 @@ window.onload = function () {
   
     temps = setTimeout(moveright, 300);
   };
-  
 
-  
+function afficheMenu(){
+    //mnuBurger : DIV du menu burger
+    //ajoute la classe affiche dur la div
+    document.getElementById('mnuBurger').classList.toggle('affiche');
+}
+
 function currentImg() {
     /** recherche d'index de la boite affichant l'image en cours */
     let maboite = '';

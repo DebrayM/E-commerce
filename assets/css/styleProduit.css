@@ -23,8 +23,8 @@ body header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 body header img {
   padding: 10px 10px 10px 20px;
@@ -39,9 +39,38 @@ body header .desk .desk_menu {
 body header .desk .desk_icons {
   display: none;
 }
-body header .burger {
-  padding: 10px 20px 10px 10px;
+body header .aeraMenuBurger {
   display: block;
+  width: 100px;
+}
+body header .aeraMenuBurger .burger {
+  display: block;
+}
+body header .aeraMenuBurger .cache {
+  display: none;
+}
+body header .aeraMenuBurger .affiche {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+body header .aeraMenuBurger .affiche .menuBurger {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  position: absolute;
+  z-index: 10;
+  background-color: #302c19;
+  width: 100px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  border-radius: 0 0 8px 8px;
+}
+body header .aeraMenuBurger .affiche ul li {
+  padding-left: 10px;
+}
+body header .aeraMenuBurger .affiche ul li a {
+  word-break: break-all;
 }
 
 body main section {
@@ -167,7 +196,7 @@ body footer ul li {
   body header .desk a:hover {
     color: #ffd700;
   }
-  body header .burger {
+  body header .aeraMenuBurger {
     display: none;
   }
 }

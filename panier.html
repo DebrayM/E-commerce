@@ -7,6 +7,7 @@
     <title>Argentina - Panier</title>
     <link rel="stylesheet" href="assets/css/stylepanier.css">
     <script src="assets/js/panier.js" defer></script>
+    <script src="assets/js/codeMenuBurger.js" defer></script>
     
 </head>
 <body>
@@ -36,9 +37,25 @@
                 </li>
             </ul>
         </div>
-        <a href="#" class="burger"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-        </svg></a>
+        <div class="aeraMenuBurger">
+            <div class="burger">
+            <a href="#" id="btnBurger"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg></a></div>
+            <div class="cache" id="mnuBurger">
+                <ul class="menuBurger">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Boutique</a></li>
+                    <li><a href="#">Compte</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><hr></li>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="panier.html">Panier</a></li>
+                </ul>
+            </div>
+            </div>
     </header>
     <main>
         <section id="panier">

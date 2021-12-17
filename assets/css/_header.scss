@@ -6,6 +6,7 @@ a{
     text-decoration: none;
     color: white;
 }
+
 ul{
     list-style: none;
 }
@@ -20,8 +21,8 @@ body{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
         img{
             padding: 10px 10px 10px 20px;
             height: 34px;
@@ -35,9 +36,42 @@ body{
                 display: none;
             }
         }
-        .burger{
-            padding: 10px 20px 10px 10px;
+
+        .aeraMenuBurger{
             display: block;
+            width: 100px;
+        .burger{
+            display: block; 
         }
+        .cache{
+            display: none;
+        }
+        .affiche{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            
+            .menuBurger{
+                display: flex;
+                flex-direction: column;
+                gap:2px;
+                position: absolute;
+                z-index: 10;
+                background-color: $bg-color-entete;
+                width: 100px;
+                padding-top: 5px;
+                padding-bottom: 10px;
+                border-radius: 0 0 8px 8px;
+            }
+            ul{
+                li{
+                    padding-left: 10px;
+                    a{
+                        word-break: break-all;
+                    }
+                }
+                }
+        }
+    }
     }
 }
